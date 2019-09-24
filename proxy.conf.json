@@ -1,0 +1,80 @@
+{
+  "/identity": {
+    "target": "http://192.168.1.39",
+    "secure": false,
+    "pathRewrite": {
+      "/identity": "/identity"
+    }
+  },
+  "/api/office": {
+    "target": "http://192.168.1.39",
+    "secure": false,
+    "pathRewrite": {
+      "^/api/office": "/office"
+    }
+  },
+  "/api/customer": {
+    "target": "http://192.168.1.39",
+    "secure": false,
+    "pathRewrite": {
+      "^/api/customer": "/customer"
+    }
+  },
+  "/api/accounting": {
+    "target": "http://192.168.1.39",
+    "secure": false,
+    "pathRewrite": {
+      "^/api/accounting": "/accounting"
+    }
+  },
+  "/api/portfolio": {
+    "target": "http://192.168.1.39",
+    "secure": false,
+    "pathRewrite": {
+      "^/api/portfolio": "/portfolio"
+    }
+  },
+  "/api/deposit": {
+    "target": "http://192.168.1.39",
+    "secure": false,
+    "pathRewrite": {
+      "^/api/deposit": "/deposit"
+    }
+  },
+  "/api/teller": {
+    "target": "http://192.168.1.39",
+    "secure": false,
+    "pathRewrite": {
+      "^/api/teller": "/teller"
+    }
+  },
+  "/api/reporting": {
+    "target": "http://192.168.1.39",
+    "secure": false,
+    "pathRewrite": {
+      "^/api/reporting": "/reporting"
+    }
+  },
+  "/api/cheques": {
+    "target": "http://192.168.1.39",
+    "secure": false,
+    "pathRewrite": {
+      "^/api/cheques": "/cheques"
+    }
+  },
+  "/api/payroll": {
+    "target": "http://192.168.1.39",
+    "secure": false,
+    "pathRewrite": {
+      "^/api/payroll": "/payroll"
+    }
+  },
+
+  "/api/group": {
+    "target": "http://192.168.1.39",
+    "secure": false,
+    "pathRewrite": {
+      "^/api/group": "/group"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<!-- begin: Header -->
+<div ktHeader #ktHeader class="kt-header kt-grid__item header" id="kt_header">
+	<div class="kt-header__top">
+		<div class="kt-container kt-container--fluid">
+			<!-- begin:: Brand -->
+			<kt-brand></kt-brand>
+			<!-- end:: Brand -->
+			<!-- begin:: Header Topbar -->
+			<kt-topbar></kt-topbar>
+			<!-- end:: Header Topbar -->
+		</div>
+	</div>
+	<div class="kt-header__bottom">
+		<div class="kt-container" [ngClass]="{'kt-container--fluid': fluid}">
+			<!-- begin: Header Menu -->
+			<kt-menu-horizontal *ngIf="menuHeaderDisplay"></kt-menu-horizontal>
+			<!-- end: Header Menu -->
+		</div>
+	</div>
+</div>
+<!-- end: Header -->

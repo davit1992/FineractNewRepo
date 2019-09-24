@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="col-xl-8">
+        <div class="form-group row">
+            <label for="From" class="col-sm-2 col-form-label">From</label>
+            <div class="col-sm-10">
+                <ngb-datepicker-popup [name]="From"></ngb-datepicker-popup>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="To" class="col-sm-2 col-form-label">To</label>
+            <div class="col-sm-10">
+                <ngb-datepicker-popup [name]="To"></ngb-datepicker-popup>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="Channels">Channels</label>
+            <select name="Channels" class="form-control">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xl-8">
+        <kt-portlet [class]="'kt-portlet--height-fluid'">
+            <kt-portlet-header [title]="'Daily Average'" [class]="'justify-content-center portlet-header-info'">
+            </kt-portlet-header>
+            <kt-portlet-body class="p-0">
+                <table class="table">
+                    <tr>
+                        <td>
+                            Trunsction Value
+                        </td>
+                        <td>
+                            2,087,918
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Trunsction Value
+                        </td>
+                        <td>
+                            2,047,583.29
+                        </td>
+                    </tr>
+                </table>
+            </kt-portlet-body>
+        </kt-portlet>
+    </div>
+    <div class="col-xl-4">
+        <kt-portlet [class]="'kt-portlet--height-fluid'">
+            <kt-portlet-header [title]="'Success Rate'" [class]="'justify-content-center portlet-header-info'">
+            </kt-portlet-header>
+            <kt-portlet-body class="p-0">
+                <table class="table">
+                    <tr>
+                        <td>
+                            Success Parcentage
+                        </td>
+                        <td>
+                            89.72%
+                        </td>
+                    </tr>
+                </table>
+            </kt-portlet-body>
+        </kt-portlet>
+
+    </div>
+</div>
