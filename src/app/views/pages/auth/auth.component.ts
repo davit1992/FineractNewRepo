@@ -1,5 +1,7 @@
 // Angular
 import { Component, ElementRef, OnInit, Renderer2, ViewEncapsulation } from '@angular/core';
+//object path
+import * as objectPath from 'object-path';
 // Layout
 import { LayoutConfigService, SplashScreenService, TranslationService } from '../../../core/_base/layout';
 // Auth
@@ -43,6 +45,10 @@ export class AuthComponent implements OnInit {
 	 * On init
 	 */
 	ngOnInit(): void {
+
+		document.body.style.backgroundImage = 'url("./assets/media/demos/demo8/bg-1.jpg")';
+		document.body.style.backgroundPosition = 'center top';
+
 		this.translationService.setLanguage(this.translationService.getSelectedLanguage());
 		this.headerLogo = this.layoutConfigService.getLogo();
 

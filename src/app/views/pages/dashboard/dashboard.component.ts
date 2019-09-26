@@ -10,6 +10,10 @@ import { WidgetPipeChartOption } from '../../partials/content/widgets/widgetPieC
 import { Widget12Options } from '../../partials/content/widgets/widget12/widget12.component';
 import { WidgetBarChartOption } from '../../partials/content/widgets/widgetBarChart/WidgetBarChart.component';
 import { Widget14Options } from '../../partials/content/widgets/widget14/widget14.component';
+import { WidgetCustomerParticipationSummaryChartOptions } from '../../partials/content/widgets/WidgetCustomerParticipationSummaryChart/WidgetCustomerParticipationSummaryChart.component';
+import { WidgetInteractionVolumeOptions } from '../../partials/content/widgets/WidgetInteractionVolume/WidgetInteractionVolume.component';
+import { WidgetWeeklyStrechedVolumeOptions } from '../../partials/content/widgets/WidgetWeeklyStrechedVolume/WidgetWeeklyStrechedVolume.component';
+import { WidgetInteractionValueOptions } from '../../partials/content/widgets/WidgetInteractionValue/WidgetInteractionValue.component';
 
 @Component({
 	selector: 'kt-dashboard',
@@ -38,6 +42,16 @@ export class DashboardComponent implements OnInit {
 	widget14Optins4: Widget14Options;
 	widget14Optins5: Widget14Options;
 
+	widgetCusomerSummaryOptins1: WidgetCustomerParticipationSummaryChartOptions;
+	widgetCusomerSummaryOptins2: WidgetCustomerParticipationSummaryChartOptions;
+	widgetCusomerSummaryOptins3: WidgetCustomerParticipationSummaryChartOptions;
+
+	interactionVolumeOptions:WidgetInteractionVolumeOptions;
+
+
+	widgetWeeklyStrechedVolumeOptions: WidgetWeeklyStrechedVolumeOptions;
+
+	interactiveValueOptions:WidgetInteractionValueOptions;
 
 	constructor(private layoutConfigService: LayoutConfigService, ) {
 	}
@@ -328,69 +342,87 @@ export class DashboardComponent implements OnInit {
 				}]
 		};
 
-		this.widget14Optins1 = {
-			type: 'horizontalBar',
-			xAxes_Display: true,
-			yAxes_Display: true,
-			labels: ['Used Channel 1', 'Used Channels 2', 'Used Channels 3'],
-			xAxesTicksCallbackValue:"",
-			yAxesTicksCallbackValue:"",
-			xAxesPosition:'bottom',
-			yAxesPosition:'left',
-			dataset: [{
-				backgroundColor: this.layoutConfigService.getConfig('colors.state.primary'),
-				data: [
-					50, 45, 0
-				]
-			}]
-		};
-		this.widget14Optins2 = {
-			type: 'horizontalBar',
-			xAxes_Display: true,
-			yAxes_Display: false,
-			labels: ['Used Channel 1', 'Used Channels 2', 'Used Channels 3'],
-			xAxesTicksCallbackValue:"",
-			yAxesTicksCallbackValue:"",
-			xAxesPosition:'bottom',
-			yAxesPosition:'left',
-			dataset: [{
-				backgroundColor: this.layoutConfigService.getConfig('colors.state.primary'),
-				data: [
-					15, 80, 10
-				]
-			}]
-		};
-		this.widget14Optins3 = {
-			type: 'horizontalBar',
-			xAxes_Display: true,
-			yAxes_Display: false,
-			labels: ['Used Channel 1', 'Used Channels 2', 'Used Channels 3'],
-			xAxesTicksCallbackValue:"",
-			yAxesTicksCallbackValue:"",
-			xAxesPosition:'bottom',
-			yAxesPosition:'left',
-			dataset: [{
-				backgroundColor: this.layoutConfigService.getConfig('colors.state.primary'),
-				data: [
-					15, 80, 15
-				]
-			}]
-		};
-
-		this.widget14Optins4={
+		this.widget14Optins4 = {
 			type: 'bar',
 			xAxes_Display: true,
 			yAxes_Display: true,
-			labels: ["0", "1", "2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23"],
-			xAxesTicksCallbackValue:"",
-			yAxesTicksCallbackValue:"K",
-			xAxesPosition:'top',
-			yAxesPosition:'left',
+			labels: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"],
+			xAxesTicksCallbackValue: "",
+			yAxesTicksCallbackValue: "K",
+			xAxesPosition: 'top',
+			yAxesPosition: 'left',
 			dataset: [{
 				backgroundColor: this.layoutConfigService.getConfig('colors.state.primary'),
 				data: [
-					11, 15, 40,30,10,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23
+					11, 15, 40, 30, 10, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
 				]
+			}]
+		};
+		this.widgetCusomerSummaryOptins1 = {
+			type:'horizontalBar',
+			labels: ['Used Channel 1', 'Used Channels 2', 'Used Channels 3'],
+			dataset:[{
+				backgroundColor: this.layoutConfigService.getConfig('colors.state.primary'),
+				data: [
+					50, 45, 0
+				],
+			}],
+			xAxes_Display:true,
+			yAxes_Display:true,
+		};
+		this.widgetCusomerSummaryOptins2 = {
+			type:'horizontalBar',
+			labels: ['Used Channel 1', 'Used Channels 2', 'Used Channels 3'],
+			dataset:[{
+				backgroundColor: this.layoutConfigService.getConfig('colors.state.primary'),
+				data: [
+					15, 80, 10
+				],
+			}],
+			xAxes_Display:true,
+			yAxes_Display:false,
+		};
+		this.widgetCusomerSummaryOptins3 = {
+			type:'horizontalBar',
+			labels: ['Used Channel 1', 'Used Channels 2', 'Used Channels 3'],
+			dataset:[{
+				backgroundColor: this.layoutConfigService.getConfig('colors.state.primary'),
+				data: [
+					15, 80, 15
+				],
+			}],
+			xAxes_Display:true,
+			yAxes_Display:false,
+		};
+
+		this.interactionVolumeOptions={
+			type:'bar',
+			labels:["AIRITIME","AIRITIME","AIRITIME", "BILL PAYMENT", "TRANSFERS"],
+			dataset: [{
+				backgroundColor: this.layoutConfigService.getConfig('colors.state.primary'),
+				data: [
+					62.735, 65.786, 293.260,70.055,103.432
+				],
+			}]
+		};
+		this.interactiveValueOptions={
+			type:'bar',
+			labels:["AIRITIME","AIRITIME","AIRITIME", "BILL PAYMENT", "TRANSFERS"],
+			dataset: [{
+				backgroundColor: this.layoutConfigService.getConfig('colors.state.primary'),
+				data: [
+					0.030458563, 0.030525392,0.148931527,0.070471148,2.324310685
+				],
+			}]
+		}
+		this.widgetWeeklyStrechedVolumeOptions={
+			type:'bar',
+			labels:["Week6","Week7","Week8", "Week9", "Week10", "Week11", "Week12", "Week13"],
+			dataset: [{
+				backgroundColor: this.layoutConfigService.getConfig('colors.state.primary'),
+				data: [
+					100,100,100,100,100,100,100,100
+				],
 			}]
 		};
 	}

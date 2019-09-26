@@ -29,7 +29,7 @@ export class MenuConfig {
 					root: true,
 					alignment: 'left',
 					page: '/Card',
-					translate: 'MENU.DASHBOARD',
+					// translate: 'MENU.DASHBOARD',
 				},
 				{
 					title: 'Teller Management',

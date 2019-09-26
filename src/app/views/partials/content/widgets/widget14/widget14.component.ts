@@ -35,6 +35,7 @@ export class Widget14Component implements OnInit {
 	 * @param layoutConfigService: LayoutConfigService
 	 */
 	constructor(private layoutConfigService: LayoutConfigService) {
+		console.log('constractor');
 	}
 
 	/**
@@ -45,6 +46,8 @@ export class Widget14Component implements OnInit {
 	 * On init
 	 */
 	ngOnInit():void {
+	
+
 		if (!this.options || this.options === undefined) {
 			this.options.type='bar';
 			this.options.xAxes_Display=false;
@@ -113,7 +116,7 @@ export class Widget14Component implements OnInit {
 							fontSize: 13,
 							padding: 10,
 							// callback: function(value, index, values) {
-							// 	return value + this.options.xAxesTicksCallbackValue;
+							// 	return String(value) + this.xAxesValue;
 							// },
 						}
 					}],
@@ -123,9 +126,9 @@ export class Widget14Component implements OnInit {
 						stacked: true,
 						gridLines: true,
 						ticks: {
-							// callback: function(value, index, values) {
-							// 	return value + this.options.yAxesTicksCallbackValue;
-							// },
+							callback: function(value, index, values) {
+								return String(value) + 'K';
+							},
 
 							display: true,
 							// min: 0,

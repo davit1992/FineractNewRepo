@@ -27,6 +27,8 @@ export class BrandComponent implements OnInit, AfterViewInit {
 	ngOnInit(): void {
 		this.headerLogo = this.layoutConfigService.getLogo();
 		this.headerStickyLogo = this.layoutConfigService.getStickyLogo();
+		console.log(this.headerLogo);
+		console.log(this.headerStickyLogo);
 	}
 
 	/**

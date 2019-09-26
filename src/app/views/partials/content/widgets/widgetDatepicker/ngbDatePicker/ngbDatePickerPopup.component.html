@@ -1,7 +1,7 @@
 <div class="input-group">
-        <input class="form-control" (click)="d.toggle()" placeholder="yyyy-mm-dd" name="{{name}}" ngbDatepicker
+        <input style="z-index: 1" class="form-control" (click)="d.toggle()" placeholder="dd/MM/yyyy" name="{{name}}" ngbDatepicker
             #d="ngbDatepicker" autocomplete="off">
-        <div class="input-group-append">
+        <div class="input-group-append" style="z-index: 1" >
             <button class="btn btn-outline-primary" (click)="d.toggle()" type="button">
                     <i class="la la-calendar"></i>
             </button>

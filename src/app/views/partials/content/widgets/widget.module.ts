@@ -21,6 +21,12 @@ import { NgbDatePickerModule } from './widgetDatepicker/ngbDatePicer.module';
 import { PortletModule } from '../general/portlet/portlet.module';
 import { WidgetPieChartComponent } from './widgetPieChart/WidgetPieChart.component';
 import { WidgetBarChartComponent } from './widgetBarChart/WidgetBarChart.component';
+import { WidgetTransactionVolumeHourlyComponent } from './WidgetTransactionVolumeHourly/WidgetTransactionVolumeHourly.component';
+import { WidgetCustomerParticipationSummaryChart } from './WidgetCustomerParticipationSummaryChart/WidgetCustomerParticipationSummaryChart.component';
+import { WidgetInteractionVolume } from './WidgetInteractionVolume/WidgetInteractionVolume.component';
+import { WidgetWeeklyStrechedVolume } from './WidgetWeeklyStrechedVolume/WidgetWeeklyStrechedVolume.component';
+import { WidgetInteractionValue } from './WidgetInteractionValue/WidgetInteractionValue.component';
+import { WidgetIncomingWires } from './WidgetIncomingWires/WidgetIncomingWires.component';
 
 @NgModule({
 	declarations: [
@@ -37,6 +43,14 @@ import { WidgetBarChartComponent } from './widgetBarChart/WidgetBarChart.compone
 		WidgetBarChartComponent,
 		WidgetLastWeekSummary,
 		WidgetDailyAverage,
+
+		WidgetTransactionVolumeHourlyComponent,
+		// WidgetInteractionVolumeComponent,
+		WidgetCustomerParticipationSummaryChart,
+		WidgetInteractionVolume,
+		WidgetWeeklyStrechedVolume,
+		WidgetInteractionValue,
+		WidgetIncomingWires,
 	],
 	exports: [
 		DataTableComponent,
@@ -52,6 +66,14 @@ import { WidgetBarChartComponent } from './widgetBarChart/WidgetBarChart.compone
 		WidgetBarChartComponent,
 		WidgetLastWeekSummary,
 		WidgetDailyAverage,
+
+		WidgetTransactionVolumeHourlyComponent,
+		// WidgetInteractionVolumeComponent,
+		WidgetCustomerParticipationSummaryChart,
+		WidgetInteractionVolume,
+		WidgetWeeklyStrechedVolume,
+		WidgetInteractionValue,
+		WidgetIncomingWires
 	],
 	imports: [
 		CommonModule,

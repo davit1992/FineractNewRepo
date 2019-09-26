@@ -10,13 +10,13 @@ export class LayoutConfig {
 				'background-image': './assets/media/demos/demo8/bg-1.jpg',
 				'background-position': 'center top',
 			},
-			'logo': './assets/media/logos/logo-8.png',
+			'logo': './assets/media/logos/moneyvalt-logo.png',
 		},
 		// == Page Splash Screen loading
 		'loader': {
 			'enabled': true,
 			'type': 'spinner-logo',
-			'logo': './assets/media/logos/logo-mini-md.png',
+			'logo': './assets/media/logos/moneyvalt-logo.png',
 			'message': 'Please wait...',
 		},
 		// == Colors for javascript

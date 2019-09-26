@@ -128,11 +128,12 @@
                             background-color: rgba(#f7f7f9, 0.7);
                             padding-left: 1.25rem;
                             padding-right: 1.25rem;
-                            transition: background-color 0.3s ease;
+                            background: rgba(67, 34, 167, 0.4);
+                            color: #fff !important;
 
                             &:focus {
-                                transition: background-color 0.3s ease;
-                                background-color: #f7f7f9;
+                                background: rgba(67, 34, 167, 0.4);
+                                color: #fff;
                             }
                         }
                     }

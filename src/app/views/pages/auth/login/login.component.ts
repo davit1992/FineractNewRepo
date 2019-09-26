@@ -20,7 +20,7 @@ const DEMO_PARAMS = {
 	TENANT:'playground',
 	USERNAME:'operator',
 	EMAIL: 'admin@demo.com',
-	PASSWORD: 'demo'
+	PASSWORD: 'init1@l'
 };
 
 @Component({
