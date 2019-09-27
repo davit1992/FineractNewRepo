@@ -1,0 +1,62 @@
+:host {
+    .kt-widget-new-accounts{
+        .card {
+            .card-body{
+                .media{
+                    h2{
+                        color: rgb(65, 185, 254);
+                        margin-right: 2px;
+                        font-size: 60px;
+                    }
+                    .media-body {
+                        h4{
+                            margin-bottom: 0px;
+                            margin-top: 14px;
+                        }
+                        span{
+                            color: rgb(65, 185, 254);
+                        }
+                    }
+                }
+                ul {
+                    li{
+                        padding-left:1px;
+                        padding-right: 1px;
+                        
+                        .media{
+                            h3{
+                                margin-right: 2px;
+                                font-size: 35px;
+                                margin-bottom: 0px;
+                            }
+                            .media-body {
+                                h5{
+                                    margin-bottom: 0px;
+                                    margin-top: 2px;
+                                }
+                                span{
+                                    color: silver;
+                                }
+                            }
+                        }
+                        &:first-child{
+                            border-left:none; 
+                        }
+                        &:last-child{
+                            border-right: none;
+                        }
+                    }
+                     
+                }
+            }
+            .card-header{
+                background-color: transparent;
+                border: none;
+            }
+            .card-footer{
+                background-color: transparent;
+                border: none;
+            }
+        }
+    }
+}

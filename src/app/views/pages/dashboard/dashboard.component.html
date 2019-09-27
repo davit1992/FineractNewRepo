@@ -155,13 +155,16 @@
 				</Table>
 			</div>
 			<div class="col-xl-2">
-				<kt-widget-customer-participation-summary-chart [options]="widgetCusomerSummaryOptins1" [title]="'% of Total Number of Customers'"></kt-widget-customer-participation-summary-chart>
+				<kt-widget-customer-participation-summary-chart [options]="widgetCusomerSummaryOptins1"
+					[title]="'% of Total Number of Customers'"></kt-widget-customer-participation-summary-chart>
 			</div>
 			<div class="col-xl-2">
-					<kt-widget-customer-participation-summary-chart [options]="widgetCusomerSummaryOptins2" [title]="'% of Total Transaction Value'"></kt-widget-customer-participation-summary-chart>
+				<kt-widget-customer-participation-summary-chart [options]="widgetCusomerSummaryOptins2"
+					[title]="'% of Total Transaction Value'"></kt-widget-customer-participation-summary-chart>
 			</div>
 			<div class="col-xl-2">
-					<kt-widget-customer-participation-summary-chart [options]="widgetCusomerSummaryOptins3" [title]="'% of Total Transaction Volume'"></kt-widget-customer-participation-summary-chart>
+				<kt-widget-customer-participation-summary-chart [options]="widgetCusomerSummaryOptins3"
+					[title]="'% of Total Transaction Volume'"></kt-widget-customer-participation-summary-chart>
 			</div>
 			<!-- <div class="col-xl-2 d-flex align-items-center">
 				<p>From <br> Mon, 02 February,<br> 2015 <br>To <br> Fri, 27 March,<br> 2015</p>
@@ -178,65 +181,67 @@
 			</kt-portlet-header>
 			<kt-portlet-body class="p-0">
 				<kt-widget14 [options]="widget14Optins4">
-					</kt-widget14>
+				</kt-widget14>
 			</kt-portlet-body>
 		</kt-portlet>
 	</div>
 	<div class="col-md-6">
 		<kt-portlet [class]="'kt-portlet--height-fluid'">
-			<kt-portlet-header [title]="'Interaction Volume'"
-				[class]="'justify-content-center portlet-header-info'">
+			<kt-portlet-header [title]="'Interaction Volume'" [class]="'justify-content-center portlet-header-info'">
 			</kt-portlet-header>
 			<kt-portlet-body class="p-0">
 				<kt-interaction-volume-chart [options]="interactionVolumeOptions">
-					</kt-interaction-volume-chart>
+				</kt-interaction-volume-chart>
 			</kt-portlet-body>
 		</kt-portlet>
 	</div>
 </div>
 
 <div class="row">
-		<div class="col-md-6">
-			<kt-portlet [class]="'kt-portlet--height-fluid'">
-				<kt-portlet-header [title]="'Weekly 100% Streched View on Volume'"
-					[class]="'justify-content-center portlet-header-info'">
-				</kt-portlet-header>
-				<kt-portlet-body class="p-1">
-						<kt-widget-weekly-streched-volume-chart [options]="widgetWeeklyStrechedVolumeOptions"></kt-widget-weekly-streched-volume-chart>
-				</kt-portlet-body>
-			</kt-portlet>
-		</div>
-		<div class="col-md-6">
-			<kt-portlet [class]="'kt-portlet--height-fluid'">
-				<kt-portlet-header [title]="'Interaction Value'"
-					[class]="'justify-content-center portlet-header-info'">
-				</kt-portlet-header>
-				<kt-portlet-body class="p-0">
-					<kt-interaction-value-chart [options]="interactiveValueOptions">
-						</kt-interaction-value-chart>
-				</kt-portlet-body>
-			</kt-portlet>
-		</div>
+	<div class="col-md-6">
+		<kt-portlet [class]="'kt-portlet--height-fluid'">
+			<kt-portlet-header [title]="'Weekly 100% Streched View on Volume'"
+				[class]="'justify-content-center portlet-header-info'">
+			</kt-portlet-header>
+			<kt-portlet-body class="p-1">
+				<kt-widget-weekly-streched-volume-chart [options]="widgetWeeklyStrechedVolumeOptions">
+				</kt-widget-weekly-streched-volume-chart>
+			</kt-portlet-body>
+		</kt-portlet>
 	</div>
+	<div class="col-md-6">
+		<kt-portlet [class]="'kt-portlet--height-fluid'">
+			<kt-portlet-header [title]="'Interaction Value'" [class]="'justify-content-center portlet-header-info'">
+			</kt-portlet-header>
+			<kt-portlet-body class="p-0">
+				<kt-interaction-value-chart [options]="interactiveValueOptions">
+				</kt-interaction-value-chart>
+			</kt-portlet-body>
+		</kt-portlet>
+	</div>
+</div>
 
 <kt-portlet>
 	<kt-portlet-body [class]="'kt-portlet__body--fit'">
 		<div class="row row-no-padding row-col-separator-xl">
-			<div class="col-xl-4">
+			<div class="col-xl-3">
 				<kt-incoming-wires></kt-incoming-wires>
 			</div>
-			<div class="col-xl-4">
-				<kt-widget14 [title]="'Daily Sales'" [desc]="'Check out each collumn for more details'"></kt-widget14>
+			<div class="col-xl-3">
+				<kt-deposits></kt-deposits>
 			</div>
-			<div class="col-xl-4">
-				<kt-widget14 [title]="'Revenue Change'" [desc]="'Revenue change breakdown by cities'"></kt-widget14>
+			<div class="col-xl-3">
+				<kt-new-accounts></kt-new-accounts>
+			</div>
+			<div class="col-xl-3">
+				<kt-ofac></kt-ofac>
 			</div>
 		</div>
 	</kt-portlet-body>
 </kt-portlet>
 
 
-<div class="row">
+<!-- <div class="row">
 	<div class="col-xl-4">
 		<kt-portlet [class]="'kt-portlet--height-fluid'">
 			<kt-portlet-header [title]="'Download Files'">
@@ -350,7 +355,7 @@
 			</kt-portlet-body>
 		</kt-portlet>
 	</div>
-</div>
+</div> -->
 
 
 <!--

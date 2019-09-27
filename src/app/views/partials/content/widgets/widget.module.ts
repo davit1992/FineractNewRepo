@@ -27,6 +27,9 @@ import { WidgetInteractionVolume } from './WidgetInteractionVolume/WidgetInterac
 import { WidgetWeeklyStrechedVolume } from './WidgetWeeklyStrechedVolume/WidgetWeeklyStrechedVolume.component';
 import { WidgetInteractionValue } from './WidgetInteractionValue/WidgetInteractionValue.component';
 import { WidgetIncomingWires } from './WidgetIncomingWires/WidgetIncomingWires.component';
+import { WidgetDeposits } from './WidgetDeposits/WidgetDeposits.component';
+import { WidgetNewAccounts } from './WidgetNewAccounts/WidgetNewAccounts.component';
+import { WidgetOFAC } from './WidgetOFAC/WidgetOFAC.component';
 
 @NgModule({
 	declarations: [
@@ -51,6 +54,9 @@ import { WidgetIncomingWires } from './WidgetIncomingWires/WidgetIncomingWires.c
 		WidgetWeeklyStrechedVolume,
 		WidgetInteractionValue,
 		WidgetIncomingWires,
+		WidgetDeposits,
+		WidgetNewAccounts,
+		WidgetOFAC,
 	],
 	exports: [
 		DataTableComponent,
@@ -73,7 +79,10 @@ import { WidgetIncomingWires } from './WidgetIncomingWires/WidgetIncomingWires.c
 		WidgetInteractionVolume,
 		WidgetWeeklyStrechedVolume,
 		WidgetInteractionValue,
-		WidgetIncomingWires
+		WidgetIncomingWires,
+		WidgetDeposits,
+		WidgetNewAccounts,
+		WidgetOFAC,
 	],
 	imports: [
 		CommonModule,

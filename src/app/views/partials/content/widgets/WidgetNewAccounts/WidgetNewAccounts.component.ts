@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 // Lodash
 import { shuffle } from 'lodash';
 
-export interface WidgetIncomingWiresData {
+export interface WidgetNewAccountsData {
 	title: string;
 	desc: string;
 	value: string;
@@ -11,13 +11,13 @@ export interface WidgetIncomingWiresData {
 }
 
 @Component({
-	selector: 'kt-incoming-wires',
-	templateUrl: './WidgetIncomingWires.component.html',
-	styleUrls: ['./WidgetIncomingWires.component.scss'],
+	selector: 'kt-new-accounts',
+	templateUrl: './WidgetNewAccounts.component.html',
+	styleUrls: ['./WidgetNewAccounts.component.scss'],
 })
-export class WidgetIncomingWires implements OnInit {
+export class WidgetNewAccounts implements OnInit {
 	// Public properties
-	@Input() data: WidgetIncomingWiresData;
+	@Input() data: WidgetNewAccountsData;
 
 	/**
 	 * @ Lifecycle sequences => https://angular.io/guide/lifecycle-hooks
